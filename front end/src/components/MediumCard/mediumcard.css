@@ -1,0 +1,49 @@
+.mediumCard {
+  width: 350px;
+  height: 600px;
+  margin: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+.mediumCard img {
+  width: 350px;
+  height: 400px;
+  object-fit: cover;
+}
+.mediumCard_text {
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.mediumCard_text h2 {
+  width: 90%;
+  text-align: center;
+  font-size: 35px;
+  margin: 1rem 0;
+  color: rgb(119, 119, 119);
+  font-family: "Cormorant Garamond";
+  border-bottom: 1px solid rgb(240, 218, 163);
+}
+.mediumCard_text span {
+  height: 130px;
+  margin: 0 0.8rem;
+  line-height: 19px;
+
+  font-size: 12px;
+}
+.mediumCard_text_button {
+  height: 50px;
+  width: 175px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  margin-bottom: 1rem;
+}
+.mediumCard_text_button a {
+  text-decoration: none;
+  color: black;
+  font-family: "Cormorant Garamond";
+}
