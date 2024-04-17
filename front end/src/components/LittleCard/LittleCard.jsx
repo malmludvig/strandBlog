@@ -11,10 +11,12 @@ const LittleCard = () => {
   return (
     <div className="littleCard">
       <img src={data.img} alt={data.title} />
-      <div className="littleCard_title">
-        <h3>{data.title}</h3>
+      <div className="littleCard_text">
+        <div className="littleCard_text_title">
+          <h3>{data.title}</h3>
+        </div>
+        <div className="littleCard_text_desc">{data.desc} </div>
       </div>
-      <div className="littleCard_desc">{data.desc} </div>
     </div>
   );
 };
