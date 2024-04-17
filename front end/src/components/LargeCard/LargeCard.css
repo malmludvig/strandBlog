@@ -1,37 +1,41 @@
-.mediumCard {
-  width: 350px;
-  height: 600px;
-  margin: 1rem;
+.largeCard {
+  height: 500px;
+  width: 1000px;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
     rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  margin: 1rem;
+  display: flex;
+  font-family: "Cormorant Upright";
 }
-.mediumCard img {
-  width: 350px;
-  height: 375px;
+.largeCard img {
+  width: 460px;
   object-fit: cover;
 }
-.mediumCard_text {
-  height: 220px;
+.largeCard_text {
+  width: 540px;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
   flex-direction: column;
-  font-family: "Cormorant Garamond";
+
+  margin-left: 1rem;
 }
-.mediumCard_text h2 {
+.largeCard_text h2 {
   width: 90%;
-  text-align: center;
+  height: 60px;
   font-size: 35px;
-  margin: 0.1rem 0;
+  margin: 20px 0 0 15px;
   color: rgb(119, 119, 119);
   border-bottom: 1px solid rgb(240, 218, 163);
 }
-.mediumCard_text span {
-  margin: 0 0.8rem;
-  line-height: 19px;
-  font-size: 15px;
+.largeCard_text span {
+  width: 90%;
+  height: 350px;
+  display: flex;
+
+  align-items: center;
+
+  font-size: 22px;
 }
-.mediumCard_text_button {
+.largeCard_text_button {
   height: 40px;
   width: 155px;
   display: flex;
@@ -40,7 +44,7 @@
   border: 1px solid black;
   margin-bottom: 1rem;
 }
-.mediumCard_text_button a {
+.largeCard_text_button a {
   text-decoration: none;
   color: black;
 }

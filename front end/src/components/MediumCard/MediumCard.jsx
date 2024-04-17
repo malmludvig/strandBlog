@@ -6,7 +6,7 @@ const MediumCard = () => {
   const data = {
     title: "Paris in Summer",
     img: paris,
-    desc: "ipsum bl blab lada ada awd adawda a adawd awd awd ada wd awd adwa wdawd ad aw dawda adawd awda dawdawda awd adw ada  awdwadfafa ",
+    desc: "ipsum bl blab ad aw dawda adawd awda dawdawda awd adw ada  awdwadfafa ",
   };
   return (
     <div className="mediumCard">
