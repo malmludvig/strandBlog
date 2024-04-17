@@ -1,14 +1,5 @@
-import logo from "./logo.svg";
 import "./App.css";
-import {
-  Navbar,
-  About,
-  Contact,
-  Gallery,
-  Header,
-  Services,
-  Review,
-} from "./containers/index";
+import { Navbar, Contact, Header, Services, Review } from "./containers/index";
 
 function App() {
   return (
@@ -16,9 +7,7 @@ function App() {
       <Navbar />
       <Header />
       <Services />
-      <Gallery />
       <Review />
-      {/* <About /> */}
       <Contact />
     </div>
   );
