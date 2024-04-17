@@ -18,14 +18,14 @@
 }
 .navbar_logo h4 {
   position: absolute;
-  top: 5px;
+  top: 2px;
   left: 50%;
   transform: translate(-50%, -50%);
   font-family: "Cormorant Upright";
-  font-size: 35px;
+  font-size: 39px;
   font-weight: 400;
   font-style: italic;
-  color: rgb(105, 126, 241);
+  color: rgb(132, 148, 236);
 }
 .navbar_links {
   width: 100%;
@@ -52,7 +52,7 @@
   cursor: pointer;
 }
 .navbar_links a:hover {
-  color: rgb(207, 152, 2) !important;
+  color: rgb(132, 148, 236) !important;
 }
 .navbar_links a:visited {
   color: black;
