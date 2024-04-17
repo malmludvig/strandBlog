@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500;600;700&display=swap");
+.navbar {
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.navbar_logo {
+  width: 500px;
+  height: auto;
+  text-align: center;
+}
+.navbar_logo img {
+  width: 400px;
+  position: relative;
+}
+.navbar_logo h4 {
+  position: absolute;
+  top: 5px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Cormorant Upright";
+  font-size: 35px;
+  font-weight: 400;
+  font-style: italic;
+  color: rgb(105, 126, 241);
+}
