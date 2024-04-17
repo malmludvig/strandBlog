@@ -5,7 +5,7 @@ on: [push]
 
 env:
   AZURE_WEBAPP_NAME: maisonfleur   # set this to your application's name
-  AZURE_WEBAPP_PACKAGE_PATH: 'front end'      # set this to the path to your web app project, defaults to the repository root
+  AZURE_WEBAPP_PACKAGE_PATH: 'front end/'      # set this to the path to your web app project, defaults to the repository root
   NODE_VERSION: '18.x'                # set this to the node version to use
 
 jobs:
@@ -13,7 +13,7 @@ jobs:
     name: Build and Deploy
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@master
+    - uses: actions/checkout@main
     - name: Use Node.js ${{ env.NODE_VERSION }}
       uses: actions/setup-node@v4
       with:
