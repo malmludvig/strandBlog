@@ -1,3 +1,25 @@
 .header {
   display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.header_latest {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.header_latest h3 {
+  font-family: "Cormorant Upright";
+  text-align: center;
+}
+.header_featured {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 3rem;
+  font-family: "Cormorant Upright";
+}
+.header_featured_content {
+  display: flex;
 }
