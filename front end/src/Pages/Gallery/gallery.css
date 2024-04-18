@@ -1,0 +1,11 @@
+.gallery {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.gallery_content {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
