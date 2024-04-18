@@ -1,9 +1,9 @@
-.gallery {
+.login {
   display: flex;
   align-items: center;
   flex-direction: column;
 }
-.gallery_content {
+.login_content {
   width: 90%;
   display: flex;
   align-items: center;

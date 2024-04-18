@@ -1,14 +1,26 @@
 import React from "react";
 import { Navbar } from "../../containers";
-import LittleCard from "../../components/LittleCard/LittleCard";
+import MediumCard from "../../components/MediumCard/MediumCard";
+import "./blog.css";
 
 const Blog = () => {
   return (
-    <div>
+    <div className="blog">
       <Navbar />
-      <LittleCard />
-      <LittleCard />
-      <LittleCard />
+      <div className="blog_content">
+        <MediumCard />
+        <MediumCard />
+        <MediumCard />
+        <MediumCard />
+        <MediumCard />
+        <MediumCard />
+        <MediumCard />
+        <MediumCard />
+        <MediumCard />
+        <MediumCard />
+        <MediumCard />
+        <MediumCard />
+      </div>
     </div>
   );
 };

@@ -32,6 +32,11 @@ const Navbar = () => {
               Gallery
             </Link>
           </li>
+          <li>
+            <Link className="link" to="/login">
+              Login/Sign up
+            </Link>
+          </li>
         </ul>
       </div>
     </div>
