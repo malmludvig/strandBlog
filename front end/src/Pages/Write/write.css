@@ -1,0 +1,16 @@
+/* .write {
+} */
+.write_content {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.write_content_layouts {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  gap: 6rem;
+}

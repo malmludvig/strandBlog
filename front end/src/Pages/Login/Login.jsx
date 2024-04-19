@@ -13,7 +13,7 @@ const Login = () => {
   //login states
   const [emailLogin, setEmailLogin] = useState("");
   const [passwordLogin, setPasswordLogin] = useState("");
-  const [errorLogin, setErrorLogin] = useState("");
+  const [errorLogin, setErrorLogin] = useState("error");
   const [showPasswordLogin, setShowPasswordLogin] = useState(false);
 
   //sign Up states
@@ -30,7 +30,9 @@ const Login = () => {
       const userToLogin = { emailLogin, passwordLogin };
 
       const response = await axios.post(`${server}/login`, userToLogin);
+
       console.log(response.data);
+
       if (response.data === "no match") {
         console.log(response.data);
         setErrorLogin("Incorrect password");
@@ -108,6 +110,7 @@ const Login = () => {
                 setPasswordLogin(event.target.value);
               }}
             ></input>
+            <FiEye />
             <div className="form-required">* field is required</div>
             <span>{errorLogin && errorLogin}</span>
             <button type="submit">Login</button>
