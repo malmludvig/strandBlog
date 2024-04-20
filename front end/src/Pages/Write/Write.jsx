@@ -8,6 +8,21 @@ import Layout4 from "../../images/layout4.png";
 
 const Write = () => {
   const [layout, setLayout] = useState("");
+  const [image, setImage] = useState();
+  //   const title1 = document.getElementById("title1").value;
+
+  const showInputTitle1 = () => {
+    document.getElementById("displayTitle1").innerHTML =
+      document.getElementById("title1").value;
+  };
+  const showInputParagraf1 = () => {
+    document.getElementById("displayText1").innerHTML =
+      document.getElementById("paragraf1").value;
+  };
+
+  function previewImage(e) {
+    setImage(URL.createObjectURL(e.target.files[0]));
+  }
 
   return (
     <div className="write">
@@ -42,8 +57,50 @@ const Write = () => {
         </div>
         {layout && (
           <div className="write_content_text">
-            <div className="write_content_text_editor"> </div>
-            <div className="write_content_text_preview"> </div>
+            <div className="write_content_text_editor">
+              <div className="lableAndInput">
+                <lable for="title1">Title</lable>
+                <input
+                  type="text"
+                  name="title1"
+                  id="title1"
+                  onChange={showInputTitle1}
+                ></input>{" "}
+              </div>
+              <div className="lableAndInput">
+                <lable for="paragraf1">Text</lable>
+                <textarea
+                  name="paragraf1"
+                  id="paragraf1"
+                  onChange={showInputParagraf1}
+                ></textarea>
+              </div>
+              <div className="lableAndInput">
+                <lable for="image1">Upload your image</lable>
+                <input
+                  id="image1"
+                  type="file"
+                  accept="image/*"
+                  onChange={previewImage}
+                ></input>
+              </div>
+            </div>
+
+            <div className="write_content_text_preview">
+              <img src={image} alt="your image" />
+              <p>
+                <span
+                  className="write_content_text_preview_title1"
+                  id="displayTitle1"
+                ></span>
+              </p>
+              <p>
+                <span
+                  className="write_content_text_preview_text1"
+                  id="displayText1"
+                ></span>
+              </p>
+            </div>
           </div>
         )}
       </div>

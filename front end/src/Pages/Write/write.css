@@ -23,10 +23,39 @@
 .write_content_text_editor {
   width: 50%;
   height: 100%;
-  background-color: gray;
+  display: flex;
+  flex-direction: column;
+
+  background-color: rgb(211, 211, 211);
+}
+.lableAndInput {
+  display: flex;
+  flex-direction: column;
+  max-width: 200px;
+  align-self: center;
 }
 .write_content_text_preview {
   width: 50%;
   height: 100%;
-  background: rebeccapurple;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#paragraf1 {
+  width: 200px;
+  height: 300px;
+  background-color: #dddddd;
+  outline: none;
+  border: 1px solid transparent;
+  border-color: blue;
+}
+.write_content_text_preview_title1 {
+  font-size: 30px;
+}
+.write_content_text_preview_text1 {
+  font-size: 20px;
+}
+.write_content_text_preview img {
+  max-width: 600px;
 }
