@@ -5,19 +5,11 @@ A brief description of what your project does, who it’s for, and what problem 
 
 ## Table of Contents
 
+## Tech Stack
 
-
-## Features
-
-- ✨ **Feature 1** – Briefly explain this feature.
-- 🔧 **Feature 2** – Briefly explain this feature.
-- 🌐 **Feature 3** – Briefly explain this feature.
-
-- 🚀 High performance and easy to use
-- 🛠️ Modular and reusable components
-- 🌍 Built with accessibility and scalability in mind
-- 🧩 Easy integration with other tools and libraries
-
+- ✨ React front end
+- 🔧 .NET Web API back end
+- 🌐 SQL Server, Azure Web app, GitHub Actions 
 
 ## TODO
 
