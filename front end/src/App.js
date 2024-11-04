@@ -1,26 +1,25 @@
-import logo from "./logo.svg";
 import "./App.css";
-import {
-  Navbar,
-  About,
-  Contact,
-  Gallery,
-  Header,
-  Services,
-  Review,
-} from "./containers/index";
+import Home from "./Pages/Home/Home";
+import Blog from "./Pages/Blog/Blog";
+import About from "./Pages/About/About";
+import Gallery from "./Pages/Gallery/Gallery";
+import Login from "./Pages/Login/Login";
+import Write from "./Pages/Write/Write";
+
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <div className="app">
-      <Navbar />
-      <Header />
-      <Services />
-      <Gallery />
-      <Review />
-      {/* <About /> */}
-      <Contact />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/blog" element={<Blog />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/gallery" element={<Gallery />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/write" element={<Write />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

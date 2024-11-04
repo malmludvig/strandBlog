@@ -1,15 +1,24 @@
 import React from "react";
 import "./Header.css";
-import Bouquet from "../../images/rose.jpg";
+import bg from "../../images/Header.jpg";
+import LittleCard from "../../components/LittleCard/LittleCard";
+import MediumCard from "../../components/MediumCard/MediumCard";
+import LargeCard from "../../components/LargeCard/LargeCard";
 
 const Header = () => {
   return (
-    <div className="app__header">
-      <img src={Bouquet} alt="bouquet" />
-      <div className="app__header-text">
-        <h1>Exclusive High-Style</h1>
-        <h2>Floral arrangements</h2>
-        <button> Shop Now</button>
+    <div className="header">
+      <div className="header_latest">
+        <h3>LATEST POST</h3>
+        <LargeCard />
+      </div>
+      <div className="header_featured">
+        <h3>FEATURED POSTS</h3>
+        <div className="header_featured_content">
+          <MediumCard />
+          <MediumCard />
+          <MediumCard />
+        </div>
       </div>
     </div>
   );

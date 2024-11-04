@@ -1,0 +1,48 @@
+.largeCard {
+  height: 500px;
+  width: 1000px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  margin: 1rem;
+  display: flex;
+  font-family: "Cormorant Upright";
+}
+.largeCard img {
+  width: 460px;
+  object-fit: cover;
+}
+.largeCard_text {
+  width: 540px;
+  display: flex;
+  flex-direction: column;
+
+  margin-left: 1rem;
+}
+.largeCard_text h2 {
+  width: 90%;
+  height: 60px;
+  font-size: 35px;
+  margin: 20px 0 0 15px;
+  color: rgb(119, 119, 119);
+  border-bottom: 1px solid rgb(240, 218, 163);
+}
+.largeCard_text span {
+  width: 90%;
+  height: 350px;
+  display: flex;
+  align-items: center;
+  font-size: 22px;
+}
+.largeCard_text_button {
+  height: 40px;
+  width: 155px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  margin-bottom: 1rem;
+}
+.largeCard_text_button a {
+  text-decoration: none;
+  color: black;
+}

@@ -1,58 +1,49 @@
-import { React, useState } from "react";
+import { React } from "react";
+import { Link } from "react-router-dom";
 import "./Navbar.css";
-import Bouquet from "../../images/rose.png";
-
-import Hamburger from "hamburger-react";
+import logo from "../../images/sand_PNG.png";
 
 const Navbar = () => {
-  const [open, setOpen] = useState(false);
   return (
-    <div className="app__navbar">
-      <div className="app__navbar-logo">
-        <img src={Bouquet} alt="bouquet" />
-        Maison De La Fleur
+    <div className="navbar">
+      <div className="navbar_logo">
+        <img src={logo} alt="logo" />
+        <h4>StrandBlog</h4>
       </div>
-      
-      <div className="app__navbar-menu">
-        <ul className="app__navbar-menu-links">
+      <div className="navbar_links">
+        <ul>
           <li>
-            <a href="#services">Services</a>
+            <Link className="link" to="/">
+              Home
+            </Link>
           </li>
           <li>
-            <a href="#gallery">Gallery</a>
+            <Link className="link" to="/blog">
+              Blog
+            </Link>
           </li>
           <li>
-            <a href="#team">Team</a>
+            <Link className="link" to="/about">
+              About
+            </Link>
+          </li>
+          <li>
+            <Link className="link" to="/gallery">
+              Gallery
+            </Link>
+          </li>
+          <li>
+            <Link className="link" to="/write">
+              Write
+            </Link>
+          </li>
+          <li>
+            <Link className="link" to="/login">
+              Login/Sign up
+            </Link>
           </li>
         </ul>
       </div>
-      <div className="app__navbar-contact">
-        <a href="#contact">Contact</a>
-      </div>
-
-      <div className="app__navbar-smallscreen">
-        <Hamburger toggled={open} toggle={setOpen} />
-        {open && (
-          <div className="app__navbar-menu-popup slide-bottom">
-            <ul className="app__navbar-menu-popup-links">
-              <li>
-                <a onClick={()=>{setOpen(!open)}} href="#services">Services</a>
-              </li>
-              <li>
-                <a onClick={()=>{setOpen(!open)}} href="#gallery">Gallery</a>
-              </li>
-              <li>
-                <a onClick={()=>{setOpen(!open)}} href="#team">Team</a>
-              </li>
-              <li>
-                <a onClick={()=>{setOpen(!open)}} href="#contact">Contact</a>
-              </li>
-            </ul>
-            {/* onClick={setOpen(!open)} */}
-          </div>
-        )}
-      </div>
-
     </div>
   );
 };
