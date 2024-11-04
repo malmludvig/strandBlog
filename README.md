@@ -1,9 +1,6 @@
 # strandBlog
 
-
-A brief description of what your project does, who it’s for, and what problem it solves.
-
-## Table of Contents
+A fullstack blog project.
 
 ## Tech Stack
 
