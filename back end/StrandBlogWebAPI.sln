@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34728.123
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StrandBlogWebAPI", "StrandBlogWebAPI\StrandBlogWebAPI.csproj", "{235C4F3B-EE3E-432F-BC27-639665A9494C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{235C4F3B-EE3E-432F-BC27-639665A9494C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{235C4F3B-EE3E-432F-BC27-639665A9494C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{235C4F3B-EE3E-432F-BC27-639665A9494C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{235C4F3B-EE3E-432F-BC27-639665A9494C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EAB48327-036A-4F83-AA8E-5901B9E2A7FE}
+	EndGlobalSection
+EndGlobal

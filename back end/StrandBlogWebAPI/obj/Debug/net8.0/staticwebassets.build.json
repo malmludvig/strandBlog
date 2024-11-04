@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "hqZWsZJbr01+5+0i9oIEgqT41KXWCj4jQ7VRrs5xXGY=",
+  "Source": "StrandBlogWebAPI",
+  "BasePath": "_content/StrandBlogWebAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
